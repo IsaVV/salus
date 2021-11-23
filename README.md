@@ -1,6 +1,8 @@
 # Projeto Salus
 ### Projeto direcionado para criação de relátorios de startups incubadas na incubadora FOZ.
 
+Este projeto foi realizado com as tecnologias Python e Mysql.
+
 ## Arquivos
 
 ### - GeradorDeRelatório
@@ -8,6 +10,15 @@
 
 ### - relatório.pfd
   Exemplo de relatório gerado com gráficos relacionados aos indicadores que são utilizados para medir o nível de saude das startups em diferentes eixos.
+
+### - dml.sql
+  Arquivo responsável por inserir as informações nas tabelas do banco de dados.
+  
+### - ddl.sql
+  Arquivo responsável por criar todas as tabelas do banco de dados.
+  
+### - dql.sql
+  Arquivo que realiza diversas seleções dentro do banco de dados.
 
 ## Equipe:
 
