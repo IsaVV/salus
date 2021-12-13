@@ -40,4 +40,21 @@ VALUES (1, 4, 4, 200000),
 (2, 5, 4, 100000), 
 (3, 4, 5, 300000); 
 
+INSERT INTO Dono(CPF, Genero, Nome)
+VALUES ('07576895537', 'Masculino', 'Felipe'),
+('07576895897', 'Feminino', 'Luiza'), 
+('02342345537', 'Masculino', 'Douglas'); 
+
+INSERT INTO Funcionario(CPF, Genero, Nome, NIS, Codigo, Data_Cont)
+VALUES ('07123455537', 'Masculino', 'Marco', 124454564643, 1, '2021-05-25'),
+('12346895897', 'Feminino', 'Inês', 74320957928452, 2, '2021-07-22'), 
+('02342345678', 'Masculino', 'Dante', 1244598172983741, 3, '2021-09-27'); 
+
+INSERT INTO Dono_Startup(CPF, Codigo)
+VALUES ('07576895537', 1),
+('07576895897', 2),
+('07576895897', 3),  
+('02342345537', 3);
+
+
 commit;
