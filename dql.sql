@@ -233,3 +233,26 @@ FROM Startup
 WHERE EXTRACT(YEAR FROM Data_reg) <= 2020;
 
 -------------------------------------------------------------------------------------------
+
+-- FINAL --
+
+-- Mostra os anos que tiveram pelo menos 1 funcionario novo registrado
+SELECT COUNT(f.CPF), EXTRACT(YEAR FROM Data_cont)
+FROM Funcionario f 
+GROUP BY EXTRACT(YEAR FROM Data_cont)
+HAVING COUNT(f.CPF) >= 1;
+
+-- Seleciona os nomes dos donos e as Startups que eles possuem
+SELECT d.Nome, s.Nome
+FROM Dono_Startup ds
+INNER JOIN Startup s
+ON ds.Codigo = s.Codigo
+INNER JOIN Dono d
+ON ds.CPF = d.CPF;
+
+-- Seleciona os nomes, CPF dos Funcionarios e as Startups que eles trabalham
+SELECT f.CPF, f.Nome, s.Nome
+FROM Funcionario f
+LEFT OUTER JOIN Startup s
+ON s.Codigo = s.Codigo;
+
