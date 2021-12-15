@@ -8,7 +8,7 @@ Este projeto foi realizado com as tecnologias Python e Mysql.
 ###  GeradorDeRelatório
   Esse arquivo gera um relátorio referente a startups selecionada pelo usuário e disponibiliza em um arquivo chamado relatório.pdf.
 
-###  relatório.pfd
+###  relatório.pdf
   Exemplo de relatório gerado com gráficos relacionados aos indicadores que são utilizados para medir o nível de saude das startups em diferentes eixos.
 
 ###  dml.sql
@@ -19,6 +19,9 @@ Este projeto foi realizado com as tecnologias Python e Mysql.
   
 ###  dql.sql
   Arquivo que realiza diversas seleções dentro do banco de dados.
+
+###  modelos.pdf
+Imagem com os modelos em melhor qualidade
 
 ## Equipe:
 
